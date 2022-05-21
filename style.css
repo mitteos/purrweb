@@ -1,0 +1,61 @@
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+}
+
+
+.btn {
+    font-size: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.slider__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 512px;
+    height: 512px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.slider__container img {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    top: 0;
+    left: 0;
+}
+.slider__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.slider__pagination span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all .5s ease;
+    opacity: 0.5;
+}
+.slider__pagination span.active {
+    background: black;
+    opacity: 1;
+}
