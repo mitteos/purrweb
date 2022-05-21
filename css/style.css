@@ -613,6 +613,10 @@ button, input, select, textarea {
     transform: translate(-50%, -50%)
 }
 
+.code__phone:nth-child(1) img {
+    width: 100%
+}
+
 .no-webp .code__back:nth-child(1) {
     background: url(../img/code1.png) no-repeat center center/cover
 }
@@ -1406,6 +1410,7 @@ button, input, select, textarea {
     }
 
     .code__app {
+        justify-content: center;
         width: 95%;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -1793,16 +1798,17 @@ button, input, select, textarea {
 }
 
 @media (max-width: 500px) {
+    .code__app {
+        flex-direction: column;
+        align-items: center
+    }
+
     .primary__app .wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
         gap: 24px
-    }
-
-    .primary__app-link:nth-child(2) {
-        width: 164px
     }
 
     .scanner__item:nth-child(1) {
